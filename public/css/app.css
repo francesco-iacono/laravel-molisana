@@ -51,11 +51,48 @@ header .container .logo {
   padding: 40px;
 }
 
-.container .typology .cards {
+main {
+  background-image: url("../img/fondo-pag-speciali.jpg");
+}
+main .container {
+  padding: 40px 0;
+}
+main .container .typology {
+  padding: 10px 0;
+}
+main .container .typology h2 {
+  padding: 10px 5px;
+  color: #002D75;
+}
+main .container .typology .cards {
   display: flex;
   flex-wrap: wrap;
 }
-.container .typology .cards .card {
+main .container .typology .cards .card {
+  position: relative;
   width: calc(100% / 3 - 10px);
   margin: 5px;
+}
+main .container .typology .cards .card img {
+  display: block;
+}
+main .container .typology .cards .card .card-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(178, 229, 252, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+main .container .typology .cards .card .card-text a {
+  font-weight: 700;
+  color: black;
+}
+main .container .typology .cards .card:hover > .card-text {
+  opacity: 1;
 }

@@ -29,6 +29,7 @@
         </header>
         <main>
             <div class="container">
+                <!-- patsa lunga -->
                 <section class="typology">
                     <h2>LE LUNGHE</h2>
                     <div class="cards">
@@ -42,6 +43,37 @@
                         @endforeach
                     </div>
                 </section>
+                <!-- /patsa lunga -->
+                <!-- patsa corta -->
+                <section class="typology">
+                    <h2>LE CORTE</h2>
+                    <div class="cards">
+                        @foreach ($corte as $pasta) 
+                            <div class="card">
+                                <img src="{{ $pasta["src"] }}" alt="{{ $pasta["titolo"] }}">
+                                <div class="card-text">
+                                    <a href="#">{{ $pasta["titolo"] }}</a>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </section>
+                <!-- /patsa corta -->
+                <!-- patsa cortissima -->
+                <section class="typology">
+                    <h2>LE CORTISSIME</h2>
+                    <div class="cards">
+                        @foreach ($cortissime as $pasta) 
+                            <div class="card">
+                                <img src="{{ $pasta["src"] }}" alt="{{ $pasta["titolo"] }}">
+                                <div class="card-text">
+                                    <a href="#">{{ $pasta["titolo"] }}</a>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </section>
+                <!-- /patsa cortissima -->
             </div>
         </main>
 
