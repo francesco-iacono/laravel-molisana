@@ -50,3 +50,12 @@ header .container {
 header .container .logo {
   padding: 40px;
 }
+
+.container .typology .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .typology .cards .card {
+  width: calc(100% / 3 - 10px);
+  margin: 5px;
+}
