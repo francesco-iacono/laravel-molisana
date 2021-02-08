@@ -1,4 +1,4 @@
-main {
+.bkd-home-page {
     background-image: url("../img/fondo-pag-speciali.jpg");
     .container {
         padding: 40px 0;
@@ -32,7 +32,7 @@ main {
                         transition-duration: 0.3s;
                         a {
                             font-weight: 700;
-                            color: black;
+                            color:$colorWhite;
                         }
                     }
                     &:hover > .card-text {
@@ -41,5 +41,5 @@ main {
                 }
             }
         }  
-        }
-}
+    }
+}   

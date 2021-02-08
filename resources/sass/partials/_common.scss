@@ -16,17 +16,17 @@ img {
     list-style: none;
     li{
         display: inline-block;
-        padding: 5px 10px;
+        padding: 10px;
         cursor: pointer;
         a {
             color: black;
             font-weight: 600;
         }
         &.active {
-            background-color:  #B2E5FC;
+            background-color: $colorBkd;
         }
         &:hover {
-            background-color:  #B2E5FC;
+            background-color: $colorBkd;
         }
     } 
 }

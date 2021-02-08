@@ -22,7 +22,7 @@ img {
 }
 .list-inline li {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 10px;
   cursor: pointer;
 }
 .list-inline li a {
@@ -30,10 +30,10 @@ img {
   font-weight: 600;
 }
 .list-inline li.active {
-  background-color: #B2E5FC;
+  background-color: #B7DAE5;
 }
 .list-inline li:hover {
-  background-color: #B2E5FC;
+  background-color: #B7DAE5;
 }
 
 .container {
@@ -51,32 +51,32 @@ header .container .logo {
   padding: 40px;
 }
 
-main {
+.bkd-home-page {
   background-image: url("../img/fondo-pag-speciali.jpg");
 }
-main .container {
+.bkd-home-page .container {
   padding: 40px 0;
 }
-main .container .typology {
+.bkd-home-page .container .typology {
   padding: 10px 0;
 }
-main .container .typology h2 {
+.bkd-home-page .container .typology h2 {
   padding: 10px 5px;
   color: #002D75;
 }
-main .container .typology .cards {
+.bkd-home-page .container .typology .cards {
   display: flex;
   flex-wrap: wrap;
 }
-main .container .typology .cards .card {
+.bkd-home-page .container .typology .cards .card {
   position: relative;
   width: calc(100% / 3 - 10px);
   margin: 5px;
 }
-main .container .typology .cards .card img {
+.bkd-home-page .container .typology .cards .card img {
   display: block;
 }
-main .container .typology .cards .card .card-text {
+.bkd-home-page .container .typology .cards .card .card-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -89,10 +89,46 @@ main .container .typology .cards .card .card-text {
   opacity: 0;
   transition-duration: 0.3s;
 }
-main .container .typology .cards .card .card-text a {
+.bkd-home-page .container .typology .cards .card .card-text a {
   font-weight: 700;
-  color: black;
+  color: #ffff;
 }
-main .container .typology .cards .card:hover > .card-text {
+.bkd-home-page .container .typology .cards .card:hover > .card-text {
   opacity: 1;
+}
+
+.main-product {
+  position: relative;
+  padding: 50px 0;
+  background-color: #B7DAE5;
+  color: #002D73;
+}
+.main-product .prev {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-product .prev a {
+  font-size: 50px;
+  color: #ffff;
+}
+.main-product .prev a:hover {
+  color: blue;
+}
+.main-product .next {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-product .next a {
+  font-size: 50px;
+  color: #ffff;
+}
+.main-product .next a:hover {
+  color: #002D73;
+}
+.main-product .container h1 {
+  text-align: center;
 }

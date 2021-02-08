@@ -1,0 +1,37 @@
+.main-product {
+  position: relative;
+  padding: 50px 0;
+  background-color: $colorBkd;
+  color: $colorText;
+  .prev {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    a {
+      font-size: 50px;
+      color: $colorWhite;
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+  .next {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    a {
+      font-size: 50px;
+      color: $colorWhite;
+      &:hover {
+        color: $colorText;
+      }
+    }
+  }
+  .container {
+    h1 {
+      text-align: center;
+    }
+  }
+}
